@@ -10,10 +10,17 @@ class PostsController extends AbstractController
      */
     public function index()
     {
-        //return new Response("heloo!");
 
-        return $this->render('post/index.html.twig', [
+        $connection = $this->getDoctrine()->getConnection();
+        $connection->connect();
+        var_dump($connection->isConnected());
+        $a =123;
+        var_dump($a);
+
+       return new Response("heloo!");
+
+       /* return $this->render('post/index.html.twig', [
             'controller_name' => 'PostsController',
-        ]);
+        ]);*/
     }
 }
