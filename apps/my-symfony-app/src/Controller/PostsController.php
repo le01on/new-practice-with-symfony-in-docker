@@ -1,30 +1,41 @@
 <?php
 namespace App\Controller;
 
-
+use App\Entity\Post;
+use App\Repository\PostRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 class PostsController extends AbstractController
 {
     /**
-     * @Route("/posts", name="posts")
+     * @var PostRepository $postRepository;
      */
-    public function index()
-    {
+    private $postRepository;
 
-        $posts = [
-            'post_1' => [
-                'title' => 'Заголовок первого поста',
-                'body' => 'Тело первого поста'
-            ],
-            'post_2' => [
-                'title' => 'Заголовок второго поста',
-                'body' => 'Тело второго поста'
-            ]
-        ];
+    public function __construct(PostRepository $postRepository)
+    {
+        $this->postRepository = $postRepository;
+    }
+
+    /**
+     * @Route("/posts", name="blog_posts")
+     */
+    public function posts()
+    {
+        $posts = $this->postRepository->findAll();
+
         return $this->render('posts/index.html.twig', [
-            'posts' => $posts,
+            'posts' => $posts
+        ]);
+    }
+    /**
+     * @Route("/posts/{slug}", name="one_post")
+     */
+    public function post(Post $post)
+    {
+        return $this->render('posts/one_post.html.twig', [
+            'post' => $post
         ]);
     }
 }

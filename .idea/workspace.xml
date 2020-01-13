@@ -2,26 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4a3a005-3f17-4b79-bcbf-ef5d49fb516a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/apps/my-symfony-app/src/Entity/Post.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/my-symfony-app/src/Migrations/Version20200108205841.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/my-symfony-app/src/Repository/PostRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/my-symfony-app/templates/posts/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/lib/mysql/ibtmp1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/lib/mysql/practice/migration_versions.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/lib/mysql/practice/migration_versions.ibd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/lib/mysql/practice/post.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var/lib/mysql/practice/post.ibd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/my-symfony-app/src/Controller/PostController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/my-symfony-app/templates/posts/one_post.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/my-symfony-app/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/my-symfony-app/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/my-symfony-app/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/apps/my-symfony-app/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/my-symfony-app/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/apps/my-symfony-app/config/services.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/my-symfony-app/src/Controller/PostsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/apps/my-symfony-app/src/Controller/PostsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/my-symfony-app/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/apps/my-symfony-app/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/my-symfony-app/src/DataFixtures/AppFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/apps/my-symfony-app/src/DataFixtures/AppFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/my-symfony-app/templates/posts/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/apps/my-symfony-app/templates/posts/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/var/lib/mysql/ca-key.pem" beforeDir="false" afterPath="$PROJECT_DIR$/var/lib/mysql/ca-key.pem" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/var/lib/mysql/client-key.pem" beforeDir="false" afterPath="$PROJECT_DIR$/var/lib/mysql/client-key.pem" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/var/lib/mysql/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/var/lib/mysql/ib_logfile0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/var/lib/mysql/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/var/lib/mysql/ibdata1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/lib/mysql/ibtmp1" beforeDir="false" afterPath="$PROJECT_DIR$/var/lib/mysql/ibtmp1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/var/lib/mysql/mysql/innodb_index_stats.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/var/lib/mysql/mysql/innodb_index_stats.ibd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/var/lib/mysql/mysql/innodb_table_stats.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/var/lib/mysql/mysql/innodb_table_stats.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/lib/mysql/practice/post.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/var/lib/mysql/practice/post.ibd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/var/lib/mysql/private_key.pem" beforeDir="false" afterPath="$PROJECT_DIR$/var/lib/mysql/private_key.pem" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/var/lib/mysql/server-key.pem" beforeDir="false" afterPath="$PROJECT_DIR$/var/lib/mysql/server-key.pem" afterDir="false" />
     </list>
@@ -104,7 +100,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../docker_with_php" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="database.main" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -174,7 +170,10 @@
       <workItem from="1576827580815" duration="6368000" />
       <workItem from="1577740255742" duration="9358000" />
       <workItem from="1578510159855" duration="269000" />
-      <workItem from="1578510451906" duration="7087000" />
+      <workItem from="1578510451906" duration="8022000" />
+      <workItem from="1578942378124" duration="149000" />
+      <workItem from="1578942725319" duration="371000" />
+      <workItem from="1578943264491" duration="9661000" />
     </task>
     <servers />
   </component>

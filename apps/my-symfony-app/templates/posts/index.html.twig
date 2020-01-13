@@ -3,7 +3,7 @@
 {% block body %}
     <h1>posts</h1>
     {% for post in posts %}
-        {{ post.title }}
+        <p> <a href="{{ path('one_post', {'slug': post.slug}) }}">{{ post.title }}</a></p>
     {% endfor %}
 
 
