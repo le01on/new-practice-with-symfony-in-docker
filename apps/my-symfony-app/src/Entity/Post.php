@@ -32,7 +32,7 @@ class Post
     private $body;
 
     /**
-     * @ORM\Column(type="string", nullable=false)
+     * @ORM\Column(type="string", nullable=false, unique=true)
      */
     private $slug;
 
