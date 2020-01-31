@@ -19,6 +19,24 @@ class PostRepository extends ServiceEntityRepository
         parent::__construct($registry, Post::class);
     }
 
+     /**
+      * @return Post Returns an array with one Post object
+      */
+
+    public function findLast()
+    {
+        return $this->createQueryBuilder('p')
+            //->andWhere('p.exampleField = :val')
+           // ->setParameter('val', $value)
+            ->orderBy('p.id', 'DESC')
+            ->setMaxResults(1)
+            ->getQuery()
+            ->getResult()
+        ;
+    }
+
+
+
     // /**
     //  * @return Post[] Returns an array of Post objects
     //  */
