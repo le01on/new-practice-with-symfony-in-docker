@@ -6,13 +6,16 @@ RUN pecl install apcu
 
 RUN apt-get update && apt-get install -y \
     zlib1g-dev \
-    libzip-dev
+    libzip-dev \
+    nodejs
+RUN curl -L https://www.npmjs.com/install.sh | sh
+RUN npm install yarn
 
 RUN docker-php-ext-install zip
 RUN docker-php-ext-enable apcu
 
 
-COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
+
 
 WORKDIR /usr/src/app
 
