@@ -54,6 +54,21 @@ class PostsController extends AbstractController
     }
 
     /**
+     * @Route("/posts/search", name="blog_search")
+     */
+    public function search(Request $request)
+    {
+        $query = $request->query->get('q');
+        $posts = $this->postRepository->searchByQuery($query);
+
+        return $this->render('posts/query_post.html.twig', [
+            'posts' => $posts
+        ]);
+    }
+
+
+
+    /**
      * @Route("/posts/{slug}/edit", name="blog_post_edit")
      */
     public function edit(Post $post, Request $request)

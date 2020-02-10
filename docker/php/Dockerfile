@@ -7,8 +7,8 @@ RUN pecl install apcu
 RUN apt-get update && apt-get install -y \
     zlib1g-dev \
     libzip-dev \
-    nodejs
-RUN curl -L https://www.npmjs.com/install.sh | sh
+    npm
+
 RUN npm install yarn
 
 RUN docker-php-ext-install zip

@@ -26,8 +26,6 @@ class PostRepository extends ServiceEntityRepository
     public function findLast()
     {
         return $this->createQueryBuilder('p')
-            //->andWhere('p.exampleField = :val')
-           // ->setParameter('val', $value)
             ->orderBy('p.id', 'DESC')
             ->setMaxResults(1)
             ->getQuery()
@@ -36,6 +34,14 @@ class PostRepository extends ServiceEntityRepository
     }
 
 
+    public function searchByQuery(string $query)
+    {
+        return $this->createQueryBuilder('p')
+            ->where('p.title LIKE :query')
+            ->setParameter('query', '%'. $query. '%')
+            ->getQuery()
+            ->getResult();
+    }
 
     // /**
     //  * @return Post[] Returns an array of Post objects
