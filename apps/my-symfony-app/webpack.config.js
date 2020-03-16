@@ -16,12 +16,12 @@ Encore
     .addEntry('js/app', [
         './assets/js/app.js',
         './node_modules/bootstrap/dist/js/bootstrap.min.js',
-        //'./node_modules/jquery/jquery.js'
+        './node_modules/jquery/src/jquery.js'
     ])
     .addStyleEntry('css/app', [
         './assets/css/app.css',
         './node_modules/bootstrap/dist/css/bootstrap.min.css',
-        //'./node_modules/jquery/src/css.js'
+        './node_modules/jquery/src/css.js'
     ])
     //.addEntry('page1', './assets/js/page1.js')
     //.addEntry('page2', './assets/js/page2.js')

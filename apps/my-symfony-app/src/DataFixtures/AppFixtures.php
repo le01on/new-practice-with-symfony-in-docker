@@ -26,11 +26,11 @@ class AppFixtures extends Fixture
     {
         // $product = new Product();
         // $manager->persist($product);
-        for ($i = 1; $i < 20; $i++) {
+        for ($i = 1; $i < 100; $i++) {
             $post = new Post();
             $post->setTitle($this->faker->text(100));
             $post->setSlug($this->slug->slugify($post->getTitle()));
-            $post->setBody($this->faker->text(1000));
+            $post->setBody($this->faker->text(2500));
             $post->setCreateAt($this->faker->dateTime);
 
             $manager->persist($post);
